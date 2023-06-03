@@ -1,0 +1,111 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #440061;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px;
+    width: 660px;
+    background-color:#7000A1;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px #09010e7e;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.container1, .container2, .container3 {
+    display: flex;
+    gap: 20px;
+}
+
+#numero {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(228, 209, 209, 0.911);
+    color: black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+
+input {
+    font-weight: bolder;
+    color: white;
+    margin-top: 10vh;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4b128d;  
+    cursor: pointer;
+}
+
+input:hover {
+    border: 2px solid #7800C7;
+    background-color: transparent;
+    transform: scale(1.05);
+}
+@media (max-width: 1100px) {
+    
+    #principal {
+        height: 280px;
+        width: 500px;
+    }
+    
+    #numero {
+        width: 70px;
+        height: 70px;
+        font-size: 2em;
+    }
+    
+    input {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 542px) {
+    
+    #principal {
+        height: 220px;
+        width: 360px ;
+    }
+    
+    #numero {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    
+    #principal {
+        height: 200px;
+        width: 320px;
+    }
+    
+    #numero {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+}
